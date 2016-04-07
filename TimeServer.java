@@ -1,5 +1,3 @@
-package tcp.multithreaded;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectOutputStream;
