@@ -29,7 +29,7 @@ public class TimeClient
 	    ObjectInput oin = new ObjectInputStream(in);
 
 	    Date date = (Date) oin.readObject();
-	    System.out.println("Time on host " + host + " is " + date);
+	    System.out.println("Time on host " + host1 + " is " + date);
 	} catch (IOException e1) {
 	    failed = true;
 	    System.out.println(e1);
@@ -45,12 +45,12 @@ public class TimeClient
 	    	ObjectInput oin = new ObjectInputStream(in);
 
 	    	Date date = (Date) oin.readObject();
-	    	System.out.println("Time on host " + host + " is " + date);
+	    	System.out.println("Time on host " + host2 + " is " + date);
 	    } catch (IOException e1) {
 	    	System.out.println(e1);
 	    } catch (ClassNotFoundException e2) {
 	    	System.out.println(e2);
-		}
+	    }
 	}
     }
 }
