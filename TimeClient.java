@@ -40,7 +40,7 @@ public class TimeClient
 	
 	if (failed) {
 	    try {
-	    	Socket s = new Socket(host, port);
+	    	Socket s = new Socket(host2, port2);
 	    	InputStream in = s.getInputStream();
 	    	ObjectInput oin = new ObjectInputStream(in);
 
